@@ -1,1 +1,1 @@
-# Algos4Artists
+# Algos4Artists (working title)
