@@ -1,1 +1,8 @@
 # Algos4ArtistsBook
+## Introduction
+When I started to learn how to code coming from an art background, it felt like having a super power. Not only was it powerful in the scope of what a machine with billions of tiny switches can do, but it was also very liberating. On a modern laptop, you can create just about anything you could think of if you knew how to turn it into machine code. When it came to turning ideas into reality, as long as I had a working computer, I did not have to worry about money to buy transient art supplies, or finding an adequate studio space. All that I was limited by was knowledge and time, so then my journey began.
+
+There are several things I want mention to the reader:
+  
+I don't want to make it sound like I am promoting the idea that programming is the ultimate equalizer for creation when not everyone has a computer, cell phone, or internet access. Some have better computers than others along with various differences in equipment. Having the knowledge and possibility to code is a priviledge and therefore inaccessible to some, which is why I decide to write with those with low-income backgrounds in mind by only teaching with and about free and open source software and tools. This book is also intended to be a resource and guide for anyone who is intimidated by programming or art with technology in general for how expensive and complicated everything looks to an outsider. Copies of this book are free and available as HTML, PDF, or E-Book format.
+

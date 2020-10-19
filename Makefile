@@ -30,7 +30,7 @@ PDF=$(SRC:.md=.pdf)
 HTML=$(SRC:.md=.html)
 EPUB=$(SRC:.md=.epub)
 
-all: $(OUTPUTFLDR)/$(PDF)
+all: $(OUTPUTFLDR)/$(PDF) $(OUTPUTFLDR)/$(HTML) $(OUTPUTFLDR)/$(EPUB) open
     
 $(OUTPUTFLDR)/%.pdf: %.md
 	pandoc $< -o $@ $(PANDOCFLAGS)
@@ -51,5 +51,5 @@ output:
 clean:
 	rm -rf ./output
 
-open: output/book.pdf
-	open output/book.pdf
+open: $(OUTPUTFLDR)/$(PDF)
+	open output/Algos4ArtistsBook.pdf
