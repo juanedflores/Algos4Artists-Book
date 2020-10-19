@@ -37,6 +37,7 @@ $(OUTPUTFLDR)/%.pdf: %.md
 
 $(OUTPUTFLDR)/%.html: %.md
 	pandoc $< -o $@ $(PANDOCFLAGS)
+	cp $@ ./index.html
 
 $(OUTPUTFLDR)/%.epub: %.md
 	pandoc $< -o $@ $(PANDOCFLAGS)
