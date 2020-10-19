@@ -27,14 +27,23 @@ SRC = Algos4ArtistsBook.md
 
 ## Using Substitution reference to define the target pdf file
 PDF=$(SRC:.md=.pdf)
+HTML=$(SRC:.md=.html)
+EPUB=$(SRC:.md=.epub)
 
 all: $(OUTPUTFLDR)/$(PDF)
     
 $(OUTPUTFLDR)/%.pdf: %.md
 	pandoc $< -o $@ $(PANDOCFLAGS)
 
-output/%.epub: %.md $(FIGURES) Makefile | output
+$(OUTPUTFLDR)/%.html: %.md
 	pandoc $< -o $@ $(PANDOCFLAGS)
+
+$(OUTPUTFLDR)/%.epub: %.md
+	pandoc $< -o $@ $(PANDOCFLAGS)
+
+# output/%.epub: %.md $(FIGURES) Makefile | output
+# 	pandoc $< -o $@ $(PANDOCFLAGS)
+
 	
 output:
 	mkdir ./$(OUTPUTFLDR)
