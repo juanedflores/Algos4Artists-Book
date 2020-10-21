@@ -45,7 +45,7 @@ a:hover {
  */
 a,
 .uk-link {
-  color: #07D;
+  color: #07d;
   text-decoration: none;
   cursor: pointer;
 }
@@ -81,7 +81,7 @@ strong {
   /* 2 */
   font-family: Consolas, monospace, serif;
   /* 3 */
-  color: #D05;
+  color: #d05;
   white-space: nowrap;
   padding: 0 4px;
   border: 1px solid #ddd;
@@ -92,7 +92,7 @@ strong {
  * Emphasize
  */
 em {
-  color: #D05;
+  color: #d05;
 }
 /*
  * Insert
@@ -601,26 +601,28 @@ iframe {
   padding-left: 25px;
   padding-right: 25px;
 }
-.uk-grid-divider > [class*='uk-width-1-']:not(.uk-width-1-1):nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-2-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-3-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-4-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-5-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-6-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-7-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-8-']:nth-child(n+2),
-.uk-grid-divider > [class*='uk-width-9-']:nth-child(n+2) {
+.uk-grid-divider > [class*="uk-width-1-"]:not(.uk-width-1-1):nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-2-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-3-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-4-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-5-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-6-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-7-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-8-"]:nth-child(n + 2),
+.uk-grid-divider > [class*="uk-width-9-"]:nth-child(n + 2) {
   border-left: 1px solid #ddd;
 }
 /* Tablet and bigger */
 @media (min-width: 768px) {
-  .uk-grid-divider > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-child(n+2) {
+  .uk-grid-divider
+    > [class*="uk-width-medium-"]:not(.uk-width-medium-1-1):nth-child(n + 2) {
     border-left: 1px solid #ddd;
   }
 }
 /* Desktop and bigger */
 @media (min-width: 960px) {
-  .uk-grid-divider > [class*='uk-width-large-']:not(.uk-width-large-1-1):nth-child(n+2) {
+  .uk-grid-divider
+    > [class*="uk-width-large-"]:not(.uk-width-large-1-1):nth-child(n + 2) {
     border-left: 1px solid #ddd;
   }
 }
@@ -674,7 +676,7 @@ iframe {
 }
 /* Even grid cell widths
  ========================================================================== */
-[class*='uk-grid-width'] > * {
+[class*="uk-grid-width"] > * {
   box-sizing: border-box;
   width: 100%;
 }
@@ -797,7 +799,7 @@ iframe {
 }
 /* Sub-objects: `uk-width-*`
  ========================================================================== */
-[class*='uk-width'] {
+[class*="uk-width"] {
   box-sizing: border-box;
   width: 100%;
 }
@@ -1144,8 +1146,8 @@ iframe {
  */
 /* Tablet and bigger */
 @media (min-width: 768px) {
-  [class*='uk-push-'],
-  [class*='uk-pull-'] {
+  [class*="uk-push-"],
+  [class*="uk-pull-"] {
     position: relative;
   }
   /*
@@ -1688,8 +1690,8 @@ iframe {
   margin: 25px 0 0 0;
   list-style: none;
 }
-.uk-comment-list > li:nth-child(n+2),
-.uk-comment-list .uk-comment + ul > li:nth-child(n+2) {
+.uk-comment-list > li:nth-child(n + 2),
+.uk-comment-list .uk-comment + ul > li:nth-child(n + 2) {
   margin-top: 25px;
 }
 /* Tablet and bigger */
@@ -1871,7 +1873,7 @@ ul.uk-nav-sub {
  * Nested items
  */
 .uk-nav-side ul a {
-  color: #07D;
+  color: #07d;
 }
 .uk-nav-side ul a:hover {
   color: #059;
@@ -1914,7 +1916,7 @@ ul.uk-nav-sub {
  * Nested items
  */
 .uk-nav-dropdown ul a {
-  color: #07D;
+  color: #07d;
 }
 .uk-nav-dropdown ul a:hover {
   color: #059;
@@ -1957,7 +1959,7 @@ ul.uk-nav-sub {
  * Nested items
  */
 .uk-nav-navbar ul a {
-  color: #07D;
+  color: #07d;
 }
 .uk-nav-navbar ul a:hover {
   color: #059;
@@ -2106,7 +2108,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   text-shadow: 0 1px 0 #fff;
 }
 /* Appear not as link */
-.uk-navbar-nav > li > a[href='#'] {
+.uk-navbar-nav > li > a[href="#"] {
   cursor: text;
 }
 /*
@@ -2179,7 +2181,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-content:before,
 .uk-navbar-brand:before,
 .uk-navbar-toggle:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -2196,7 +2198,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  * Link colors
  */
 .uk-navbar-content > a:not([class]) {
-  color: #07D;
+  color: #07d;
 }
 .uk-navbar-content > a:not([class]):hover {
   color: #059;
@@ -2368,14 +2370,14 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  */
 .uk-subnav > * > :hover,
 .uk-subnav > * > :focus {
-  color: #07D;
+  color: #07d;
   text-decoration: none;
 }
 /*
  * Active
  */
 .uk-subnav > .uk-active > * {
-  color: #07D;
+  color: #07d;
 }
 /* Modifier: 'subnav-line'
  ========================================================================== */
@@ -2385,7 +2387,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   height: 10px;
   vertical-align: middle;
 }
-.uk-subnav-line > :nth-child(n+2):before {
+.uk-subnav-line > :nth-child(n + 2):before {
   margin-right: 10px;
   border-left: 1px solid #ddd;
 }
@@ -2455,7 +2457,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-breadcrumb > li > span {
   display: inline-block;
 }
-.uk-breadcrumb > li:nth-child(n+2):before {
+.uk-breadcrumb > li:nth-child(n + 2):before {
   content: "/";
   display: inline-block;
   margin: 0 8px;
@@ -2508,7 +2510,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   vertical-align: top;
 }
-.uk-pagination > li:nth-child(n+2) {
+.uk-pagination > li:nth-child(n + 2) {
   margin-left: 5px;
 }
 /*
@@ -2636,12 +2638,12 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   padding: 8px 12px 8px 12px;
   border: 1px solid transparent;
   border-bottom-width: 0;
-  color: #07D;
+  color: #07d;
   text-decoration: none;
   border-radius: 4px 4px 0 0;
   text-shadow: 0 1px 0 #fff;
 }
-.uk-tab > li:nth-child(n+2) > a {
+.uk-tab > li:nth-child(n + 2) > a {
   margin-left: 5px;
 }
 /*
@@ -2688,7 +2690,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-tab-flip > li {
   float: right;
 }
-.uk-tab-flip > li:nth-child(n+2) > a {
+.uk-tab-flip > li:nth-child(n + 2) > a {
   margin-left: 0;
   margin-right: 5px;
 }
@@ -2822,8 +2824,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .uk-tab-left > li:nth-child(n+2) > a,
-  .uk-tab-right > li:nth-child(n+2) > a {
+  .uk-tab-left > li:nth-child(n + 2) > a,
+  .uk-tab-right > li:nth-child(n + 2) > a {
     margin-left: 0;
     margin-top: 5px;
   }
@@ -2848,7 +2850,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   .uk-tab-left > li:not(.uk-active) > a:focus {
     margin-bottom: 0;
     margin-right: 1px;
-    padding-bottom: 8px;
     padding-right: 11px;
   }
   .uk-tab-left > li.uk-active > a {
@@ -3007,7 +3008,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 /* Modifier: `uk-list-line`
  ========================================================================== */
-.uk-list-line > li:nth-child(n+2) {
+.uk-list-line > li:nth-child(n + 2) {
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #ddd;
@@ -3023,7 +3024,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 /* Modifier: `uk-list-space`
  ========================================================================== */
-.uk-list-space > li:nth-child(n+2) {
+.uk-list-space > li:nth-child(n + 2) {
   margin-top: 10px;
 }
 .uk-list-striped > li:first-child {
@@ -3056,7 +3057,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-description-list-line > dt {
   font-weight: normal;
 }
-.uk-description-list-line > dt:nth-child(n+2) {
+.uk-description-list-line > dt:nth-child(n + 2) {
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #ddd;
@@ -3603,7 +3604,7 @@ select.uk-form-width-mini {
 /*
  * 1. Make form element clickable through icon
  */
-.uk-form-icon > [class*='uk-icon-'] {
+.uk-form-icon > [class*="uk-icon-"] {
   position: absolute;
   top: 50%;
   width: 30px;
@@ -3620,7 +3621,7 @@ select.uk-form-width-mini {
 /*
  * Sub-modifier: `uk-form-icon-flip`
  */
-.uk-form-icon-flip > [class*='uk-icon-'] {
+.uk-form-icon-flip > [class*="uk-icon-"] {
   right: 0;
 }
 .uk-form-icon-flip > input {
@@ -3832,7 +3833,7 @@ select.uk-form-width-mini {
 }
 /* Color */
 .uk-button-link {
-  color: #07D;
+  color: #07d;
 }
 .uk-button-link:hover,
 .uk-button-link:focus,
@@ -3931,8 +3932,8 @@ select.uk-form-width-mini {
 /*
      * Collapse border
      */
-.uk-button-group > .uk-button:nth-child(n+2),
-.uk-button-group > div:nth-child(n+2) .uk-button {
+.uk-button-group > .uk-button:nth-child(n + 2),
+.uk-button-group > div:nth-child(n + 2) .uk-button {
   margin-left: -1px;
 }
 /*
@@ -3950,8 +3951,10 @@ select.uk-form-width-mini {
    Component: Icon
  ========================================================================== */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.woff2") format('woff2'), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -3962,7 +3965,7 @@ select.uk-form-width-mini {
  * 5. Better font rendering
  * 6. Remove `text-decoration` for anchors
  */
-[class*='uk-icon-'] {
+[class*="uk-icon-"] {
   font-family: FontAwesome;
   /* 1 */
   display: inline-block;
@@ -3976,9 +3979,9 @@ select.uk-form-width-mini {
   -moz-osx-font-smoothing: grayscale;
 }
 /* 6 */
-[class*='uk-icon-'],
-[class*='uk-icon-']:hover,
-[class*='uk-icon-']:focus {
+[class*="uk-icon-"],
+[class*="uk-icon-"]:hover,
+[class*="uk-icon-"]:focus {
   text-decoration: none;
 }
 /* Size modifiers
@@ -6414,7 +6417,7 @@ a.uk-thumbnail:focus {
   color: inherit;
   text-decoration: underline;
 }
-.uk-overlay-panel a[class*='uk-icon-']:not(.uk-icon-button) {
+.uk-overlay-panel a[class*="uk-icon-"]:not(.uk-icon-button) {
   color: inherit;
 }
 /* Sub-object `uk-overlay-hover` and `uk-overlay-active`
@@ -6476,7 +6479,7 @@ a.uk-thumbnail:focus {
 .uk-overlay-spin,
 .uk-overlay-grayscale,
 .uk-overlay-blur,
-[class*='uk-overlay-slide'] {
+[class*="uk-overlay-slide"] {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   transition-property: opacity, transform, filter;
@@ -6484,7 +6487,7 @@ a.uk-thumbnail:focus {
 .uk-overlay-active .uk-overlay-fade,
 .uk-overlay-active .uk-overlay-scale,
 .uk-overlay-active .uk-overlay-spin,
-.uk-overlay-active [class*='uk-overlay-slide'] {
+.uk-overlay-active [class*="uk-overlay-slide"] {
   transition-duration: 0.8s;
 }
 /*
@@ -6540,7 +6543,7 @@ a.uk-thumbnail:focus {
 /*
  * Slide
  */
-[class*='uk-overlay-slide'] {
+[class*="uk-overlay-slide"] {
   opacity: 0;
 }
 /* Top */
@@ -6564,9 +6567,9 @@ a.uk-thumbnail:focus {
   transform: translateX(100%);
 }
 /* Hover */
-.uk-overlay-hover:hover [class*='uk-overlay-slide'],
-.uk-overlay-hover.uk-hover [class*='uk-overlay-slide'],
-.uk-overlay-active .uk-active > [class*='uk-overlay-slide'] {
+.uk-overlay-hover:hover [class*="uk-overlay-slide"],
+.uk-overlay-hover.uk-hover [class*="uk-overlay-slide"],
+.uk-overlay-active .uk-active > [class*="uk-overlay-slide"] {
   opacity: 1;
   -webkit-transform: translateX(0) translateY(0);
   transform: translateX(0) translateY(0);
@@ -6637,7 +6640,7 @@ a.uk-thumbnail:focus {
  * 1. Needed for vertical alignment
  */
 .uk-overlay-area:not(:empty):before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -6713,7 +6716,7 @@ a.uk-thumbnail:focus {
 /* ========================================================================
    Component: Column
  ========================================================================== */
-[class*='uk-column-'] {
+[class*="uk-column-"] {
   -webkit-column-gap: 25px;
   -moz-column-gap: 25px;
   column-gap: 25px;
@@ -6860,7 +6863,7 @@ a.uk-thumbnail:focus {
 /* ========================================================================
    Component: Animation
  ========================================================================== */
-[class*='uk-animation-'] {
+[class*="uk-animation-"] {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-out;
@@ -6870,7 +6873,7 @@ a.uk-thumbnail:focus {
 }
 /* Hide animated element if scrollspy is used */
 @media screen {
-  [data-uk-scrollspy*='uk-animation-']:not([data-uk-scrollspy*='target']) {
+  [data-uk-scrollspy*="uk-animation-"]:not([data-uk-scrollspy*="target"]) {
     opacity: 0;
   }
 }
@@ -6985,9 +6988,9 @@ a.uk-thumbnail:focus {
  * Note: Firefox also needs this because animations are not triggered when switching between display `hidden` and `block`
  */
 .uk-animation-hover:not(:hover),
-.uk-animation-hover:not(:hover) [class*='uk-animation-'],
+.uk-animation-hover:not(:hover) [class*="uk-animation-"],
 .uk-touch .uk-animation-hover:not(.uk-hover),
-.uk-touch .uk-animation-hover:not(.uk-hover) [class*='uk-animation-'] {
+.uk-touch .uk-animation-hover:not(.uk-hover) [class*="uk-animation-"] {
   -webkit-animation-name: none;
   animation-name: none;
 }
@@ -7496,7 +7499,7 @@ a.uk-thumbnail:focus {
   margin-top: 15px;
 }
 /* Panels */
-.uk-dropdown-grid > [class*='uk-width-'] > .uk-panel + .uk-panel {
+.uk-dropdown-grid > [class*="uk-width-"] > .uk-panel + .uk-panel {
   margin-top: 15px;
 }
 /* Tablet and bigger */
@@ -7508,14 +7511,18 @@ a.uk-thumbnail:focus {
     margin-left: -15px;
     margin-right: -15px;
   }
-  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-'] {
+  .uk-dropdown:not(.uk-dropdown-stack)
+    > .uk-dropdown-grid
+    > [class*="uk-width-"] {
     padding-left: 15px;
     padding-right: 15px;
   }
   /*
      * Column divider
      */
-  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+  .uk-dropdown:not(.uk-dropdown-stack)
+    > .uk-dropdown-grid
+    > [class*="uk-width-"]:nth-child(n + 2) {
     border-left: 1px solid #ddd;
   }
   /*
@@ -7539,23 +7546,23 @@ a.uk-thumbnail:focus {
   /*
      * Stack columns and take full width
      */
-  .uk-dropdown-grid > [class*='uk-width-'] {
+  .uk-dropdown-grid > [class*="uk-width-"] {
     width: 100%;
   }
   /*
      * Vertical gutter
      */
-  .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+  .uk-dropdown-grid > [class*="uk-width-"]:nth-child(n + 2) {
     margin-top: 15px;
   }
 }
 /*
 * Stack grid columns
 */
-.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-'] {
+.uk-dropdown-stack > .uk-dropdown-grid > [class*="uk-width-"] {
   width: 100%;
 }
-.uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+.uk-dropdown-stack > .uk-dropdown-grid > [class*="uk-width-"]:nth-child(n + 2) {
   margin-top: 15px;
 }
 /* Modifier `uk-dropdown-small`
@@ -7704,7 +7711,7 @@ a.uk-thumbnail:focus {
 /*
  * Remove margin from the last-child
  */
-.uk-modal-dialog > :not([class*='uk-modal-']):last-child {
+.uk-modal-dialog > :not([class*="uk-modal-"]):last-child {
   margin-bottom: 0;
 }
 /* Close in modal
@@ -7716,7 +7723,7 @@ a.uk-thumbnail:focus {
 /*
  * Remove margin from adjacent element
  */
-.uk-modal-dialog > .uk-close:first-child + :not([class*='uk-modal-']) {
+.uk-modal-dialog > .uk-close:first-child + :not([class*="uk-modal-"]) {
   margin-top: 0;
 }
 /* Modifier: `uk-modal-dialog-lightbox`
@@ -8158,7 +8165,7 @@ a.uk-thumbnail:focus {
   float: right;
 }
 /* 1 */
-[class*='uk-float-'] {
+[class*="uk-float-"] {
   max-width: 100%;
 }
 /* Alignment of images and objects
@@ -8166,7 +8173,7 @@ a.uk-thumbnail:focus {
 /*
  * Alignment
  */
-[class*='uk-align-'] {
+[class*="uk-align-"] {
   display: block;
   margin-bottom: 15px;
 }
@@ -8205,7 +8212,7 @@ a.uk-thumbnail:focus {
  *  The `uk-vertical-align` container needs a specific height
  */
 .uk-vertical-align:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -8232,7 +8239,7 @@ a.uk-thumbnail:focus {
 /*
  * More robust if padding and border are used
  */
-[class*='uk-height'] {
+[class*="uk-height"] {
   box-sizing: border-box;
 }
 /*
@@ -8458,8 +8465,8 @@ a.uk-thumbnail:focus {
 /* Position
  ========================================================================== */
 .uk-position-absolute,
-[class*='uk-position-top'],
-[class*='uk-position-bottom'] {
+[class*="uk-position-top"],
+[class*="uk-position-bottom"] {
   position: absolute !important;
 }
 /* Don't use `width: 100%` because it is wrong if the parent has padding. */
@@ -8904,7 +8911,7 @@ a.uk-thumbnail:focus {
 .uk-contrast .uk-subnav > .uk-active > a {
   color: #fff;
 }
-.uk-contrast .uk-subnav-line > :nth-child(n+2):before {
+.uk-contrast .uk-subnav-line > :nth-child(n + 2):before {
   border-left-color: rgba(255, 255, 255, 0.2);
 }
 .uk-contrast .uk-subnav-pill > * > a:hover,
@@ -8945,7 +8952,7 @@ a.uk-thumbnail:focus {
 .uk-contrast .uk-tab-grid:before {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
-.uk-contrast .uk-list-line > li:nth-child(n+2) {
+.uk-contrast .uk-list-line > li:nth-child(n + 2) {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 .uk-contrast .uk-form select,

@@ -1,5 +1,5 @@
-# Algos4ArtistsBook
-## Introduction
+
+# Introduction
 When I started to learn how to code coming from an art background, it felt like having a super power. Not only was it powerful in the scope of what a machine with billions of tiny switches can do, but it was also very liberating. On a modern laptop, you can create just about anything you could think of if you knew how to turn it into machine code. When it came to turning ideas into reality, as long as I had a working computer, I did not have to worry about money to buy transient art supplies, or finding an adequate studio space. All that I was limited by was knowledge and time, so then my journey began.
 There are several things I want mention to the reader:
   
