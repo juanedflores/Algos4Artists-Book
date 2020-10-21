@@ -1,18 +1,27 @@
 .PHONY: all clean output open
 
-PANDOCFLAGS =                           \
-  --table-of-contents                   \
+PANDOCFLAGSPDF =                                       \
+  --table-of-contents                                  \
   --include-in-header ./pandoc/latex/chapter_break.tex \
   --include-in-header ./pandoc/latex/inline_code.tex   \
-  --pdf-engine=xelatex                  \
-  --from=markdown                       \
-  --number-sections                     \
-  --highlight-style=./pandoc/pygments.theme      \
-  -V mainfont="DejaVu Serif"            \
-  -V monofont="DejaVu Sans Mono"        \
-  -V linkcolor:blue                     \
-  -V geometry:a4paper                   \
+  --pdf-engine=xelatex                                 \
+  --from=markdown                                      \
+  --number-sections                                    \
+  --highlight-style=./pandoc/pygments.theme            \
+  -V mainfont="DejaVu Serif"                           \
+  -V monofont="DejaVu Sans Mono"                       \
+  -V linkcolor:blue                                    \
+  -V geometry:a4paper                                  \
   -V geometry:margin=2cm
+
+PANDOCFLAGSHTML =                                      \
+  --table-of-contents                                  \
+  --from=markdown                                      \
+  --number-sections                                    \
+  --template=./pandoc/template.html                    \
+  --highlight-style=./pandoc/pygments.theme            \
+  -V mainfont="DejaVu Serif"                           \
+  -V monofont="DejaVu Sans Mono"                       \
 
 ## Markdown extension (e.g. md, markdown, mdown).
 MEXT = md
@@ -33,14 +42,14 @@ EPUB=$(SRC:.md=.epub)
 all: $(OUTPUTFLDR)/$(PDF) $(OUTPUTFLDR)/$(HTML) $(OUTPUTFLDR)/$(EPUB) open
     
 $(OUTPUTFLDR)/%.pdf: %.md
-	pandoc $< -o $@ $(PANDOCFLAGS)
+	pandoc $< -o $@ $(PANDOCFLAGSPDF)
 
 $(OUTPUTFLDR)/%.html: %.md
-	pandoc $< -o $@ $(PANDOCFLAGS)
-	cp $@ ./index.html
+	pandoc $< -o $@ $(PANDOCFLAGSHTML)
+	cp $@ ./docs/index.html
 
 $(OUTPUTFLDR)/%.epub: %.md
-	pandoc $< -o $@ $(PANDOCFLAGS)
+	pandoc $< -o $@ $(PANDOCFLAGSPDF)
 
 # output/%.epub: %.md $(FIGURES) Makefile | output
 # 	pandoc $< -o $@ $(PANDOCFLAGS)
